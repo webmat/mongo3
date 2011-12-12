@@ -2,6 +2,7 @@
 # configured in this Rakefile. The .rake files in the tasks directory
 # are where the options are used.
 begin
+  gem 'bones', '= 2.5.1'
   require 'bones'
   Bones.setup
 rescue LoadError

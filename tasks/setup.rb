@@ -143,6 +143,9 @@ DIFF = if system("gdiff '#{__FILE__}' '#{__FILE__}' > #{DEV_NULL} 2>&1") then 'g
 SUDO = if system("which sudo > #{DEV_NULL} 2>&1") then 'sudo'
        else '' end unless defined? SUDO
 
+RUBY = if system("which RUBY > #{DEV_NULL} 2>&1") then 'RUBY'
+       else 'RUBY' end unless defined? RUBY
+
 RCOV = "#{RUBY} -S rcov"
 RDOC = "#{RUBY} -S rdoc"
 GEM  = "#{RUBY} -S gem"
